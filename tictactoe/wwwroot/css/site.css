@@ -1,0 +1,63 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    height: 100%;
+}
+
+img {
+    display: block;
+    max-width: 30%;
+    height: auto;
+}
+
+.welcome-to-the-game::before {
+    content: "Select user bellow you want to play.";
+}
+
+@media (min-width: 768px) {
+    img {
+        display: block;
+        max-width: 10%;
+        height: auto;
+    }
+    .welcome-to-the-game::before {
+        content: "Select user you want to play from the list on the left ";
+    }
+}
+
+.listOfOnlineUsersHover:hover {
+    cursor: pointer;
+}
+
+.clickRect:hover {
+    cursor: pointer;
+}
+
+.animation {
+    animation-name: yourmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes yourmove {
+    from {
+        color: lightgreen;
+    }
+    to {
+        color: green;
+    }
+}
